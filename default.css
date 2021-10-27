@@ -1,0 +1,171 @@
+body {
+  padding: 0 !important;
+  margin: 0 !important;
+  box-sizing: border-box;
+}
+/* 헤더부분 */
+.header_container {
+  width: 100%;
+  height: 71px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #dee2e6 !important;
+  box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+.header_logo_typo {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 20px;
+  font-weight: 400;
+  color: #212529;
+}
+.header_menu_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header_menu_typo {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 400;
+  color: #343a40;
+  padding: 8px;
+  cursor: pointer;
+}
+.header_menu_typo:hover {
+  text-decoration: underline;
+}
+.header_menu_button_wrapper {
+  padding: 6px 12px;
+  border: 1px solid transparent;
+  border-color: #007bff;
+  border-radius: .25rem;
+  margin-left: 1rem!important;
+  transition: .15s;
+}
+.header_menu_button_typo {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #007bff;
+  text-align: center;
+  cursor: pointer;
+}
+.header_menu_button_wrapper:hover{
+  background-color: #007bff;
+  border-color: #007bff; /*왜 모든 칸이 한번에 파란색으로 안 채워짐?*/
+  color:white;
+}
+.header_menu_button_typo:hover {
+  background-color: #007bff;
+  color:white;
+} 
+/*헤더를 제외한 전체*/
+.total_container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/*본문*/
+.main_container {
+  margin: 0 auto !important;
+  padding: 3rem 1rem 1.5rem 1rem !important;
+  background: white;
+  max-width: 700px;
+}
+.main_title_typo {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 3.5rem; /*font-family: inherit 어떻게? */
+  font-weight: 300;
+  line-height: 1.2;
+  text-align: center !important;
+  color: #212529;
+  margin-bottom: .5rem;
+}
+.main_explain_typo {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: center !important;
+  color: #212529;
+  margin-bottom: 1rem;
+}
+/*가격 메뉴*/
+.tab_container {
+  display: flex;
+  flex-flow: row wrap;
+  /* justify-content: flex-start; */
+  margin: 0px -15px 16px -15px;
+  text-align: center;
+  background-color: #fff;
+}
+/*가격 메뉴-Free*/
+.tab_free_container {
+  margin: 0px 15px 24px 15px;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+}
+.tab_free_title_wrapper {
+  padding: .75rem 1.25rem;
+  background-color: rgba(0,0,0,.03);
+  border-bottom: 1px solid rgba(0,0,0,.125);
+  border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+}
+.tab_free_title_typo {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 1.5rem;
+  font-weight: 400!important;
+  line-height: 1.2;
+  color: rgb(33, 37, 41);
+}
+.tab_free_explain_container {
+  padding: 1.25rem;
+}
+.tab_free_explain_price_wrapper {
+  margin-bottom: .75rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+}
+.tab_free_explain_price_typo { /*둘 사이에 빈칸 필요..*/
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: rgb(33, 37, 41);
+}
+.tab_free_explain_mo_typo {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: rgb(108, 117, 125);
+  align-self: flex-end;
+}
+.tab_free_explain_typo {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(33, 37, 41);
+}
+.tab_free_button_wrapper {
+  padding: .5rem 1rem;
+  width: 100%;
+  border: 1px solid transparent;
+  border-color: #007bff;
+  border-radius: .3rem;
+  align-self: center;
+}
+.tab_free_button_typo {
+  cursor: pointer;
+}
