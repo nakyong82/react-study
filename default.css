@@ -72,6 +72,7 @@ body {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  box-sizing: border-box;
 }
 /*본문*/
 .main_container {
@@ -249,4 +250,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #6c757d!important;
+}
+.footer_menu_typo:hover {
+  text-decoration: underline;
 }
